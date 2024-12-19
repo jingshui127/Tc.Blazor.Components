@@ -1,0 +1,16 @@
+D:\BIN\Majorsoft.Blazor.Components.Timer.dll
+D:\BIN\Majorsoft.Blazor.Components.Timer.deps.json
+D:\BIN\Majorsoft.Blazor.Components.Timer.pdb
+D:\BIN\Microsoft.AspNetCore.Authorization.dll
+D:\BIN\Microsoft.AspNetCore.Components.dll
+D:\BIN\Microsoft.AspNetCore.Components.Forms.dll
+D:\BIN\Microsoft.AspNetCore.Components.Web.dll
+D:\BIN\Microsoft.AspNetCore.Metadata.dll
+D:\BIN\Microsoft.Extensions.DependencyInjection.dll
+D:\BIN\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\BIN\Microsoft.Extensions.Logging.Abstractions.dll
+D:\BIN\Microsoft.Extensions.Options.dll
+D:\BIN\Microsoft.Extensions.Primitives.dll
+D:\BIN\Microsoft.JSInterop.dll
+D:\BIN\System.IO.Pipelines.dll
+D:\BIN\Majorsoft.Blazor.Components.Timer.xml

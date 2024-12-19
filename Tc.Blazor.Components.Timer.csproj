@@ -1,0 +1,55 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+		<nullable>enable</nullable>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageId>Tc.Blazor.Components.Timer</PackageId>
+		<Product>Blazor Components</Product>
+		<PackageTags> Blazor Timer</PackageTags>
+		<Title>Blazor Components Timer</Title>
+    <SatelliteResourceLanguages>zh-CN</SatelliteResourceLanguages>
+    <RoslynatorEnable>true</RoslynatorEnable>
+    <Authors>科控物联</Authors>
+    <Description>Blazor 定时器组件。QQ:2492123056</Description>
+    <Company>科控物联</Company>
+    <Copyright>©2002-2024 WYQ</Copyright>
+    <VersionPrefix>2.1</VersionPrefix>
+    <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
+    <Version>$(VersionPrefix).$(VersionSuffix)</Version>
+    <FileVersion>$(Version)</FileVersion>
+    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+    <Deterministic>false</Deterministic>
+    <!--<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>-->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <!--<ApplicationManifest>app.manifest</ApplicationManifest>-->
+    <SignAssembly>True</SignAssembly>
+    <IsPackable>True</IsPackable>
+    <NoWarn>1701;1702;NU5104;NETSDK1138;CS7035</NoWarn>
+    <GarbageCollectionAdaptationMode>true</GarbageCollectionAdaptationMode>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://mp.weixin.qq.com/s/Qe7CB5jdqzYHkTPReiEiFg?token=857163578&amp;lang=zh_CN</PackageProjectUrl>
+	</PropertyGroup>
+  <!--<ItemGroup >
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" />
+  </ItemGroup>-->
+	<ItemGroup Condition="'$(TargetFramework)'=='net8.0'">
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.11" />
+	</ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net9.0'">
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="9.0.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>Tc.Blazor.Components.Debounce</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+	
+	<ItemGroup>
+
+
+	</ItemGroup>
+
+</Project>

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Majorsoft.Blazor.Components.Timer</id>
+    <version>1.0.0</version>
+    <title>Blazor Components Timer</title>
+    <authors>Imre Toth</authors>
+    <license type="file">License.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <icon>blazor.components.png</icon>
+    <projectUrl>https://github.com/majorimi/blazor-components/blob/master/.github/docs/Timer.md</projectUrl>
+    <description>Blazor component that can be used for scheduled and periodically repeated tasks to call custom code. Part of Majorsoft Blazor library.</description>
+    <releaseNotes>See Releases here: https://github.com/majorimi/blazor-components/releases</releaseNotes>
+    <copyright>©2021 Imre Toth</copyright>
+    <tags>.Net5 Blazor Timer</tags>
+    <repository type="Git" url="https://github.com/majorimi/blazor-components" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.8" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Csharp\Majorsoft Blazor Components\src\Majorsoft.Blazor.Components.Timer\bin\Release\net8.0\Majorsoft.Blazor.Components.Timer.dll" target="lib\net8.0\Majorsoft.Blazor.Components.Timer.dll" />
+    <file src="D:\Csharp\Majorsoft Blazor Components\.github\Images\blazor.components.png" target="blazor.components.png" />
+    <file src="D:\Csharp\Majorsoft Blazor Components\.github\License.txt" target="License.txt" />
+  </files>
+</package>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Kekong.Blazor.Components.Timer.props" />
+</Project>

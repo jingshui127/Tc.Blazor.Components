@@ -1,0 +1,4 @@
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net6.0\Tc.Blazor.Components.Timer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net6.0\Tc.Blazor.Components.Timer.AssemblyInfoInputs.cache
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net6.0\Tc.Blazor.Components.Timer.AssemblyInfo.cs
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net6.0\Tc.Blazor.Components.Timer.csproj.CoreCompileInputs.cache

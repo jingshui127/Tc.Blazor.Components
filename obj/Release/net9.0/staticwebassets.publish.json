@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "NxnsVWGSZO14RJJXLemYlCiRmbmH6vGNVTaucWUw1kw=",
+  "Source": "Tc.Blazor.Components.Timer",
+  "BasePath": "_content/Tc.Blazor.Components.Timer",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
