@@ -145,4 +145,4 @@ dotnet add package Tc.Blazor.Components.Timer
 		}
 	}
 }
-```
+```# Tc.Blazor.Components
