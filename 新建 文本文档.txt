@@ -1,7 +1,0 @@
-   # 忽略编译生成的文件
-   bin/
-   obj/
-   *.nupkg
-   *.dll
-   *.pdb
-   *.xml

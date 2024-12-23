@@ -15,11 +15,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyCopyrightAttribute("©2002-2024 WYQ")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Blazor 定时器组件。QQ:2492123056")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("2.1.2024.1219")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.1.2024.1219+b30d4c8769b301aa4ecbde399541e3b508ed2938")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("2.2.2024.1223")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("2.2.2024.1223+ad7115ec3d418b852b66134e1abf7fb8a4f14a27")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor Components")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tc.Blazor.Components.Timer")]
-[assembly: System.Reflection.AssemblyVersionAttribute("2.1")]
+[assembly: System.Reflection.AssemblyVersionAttribute("2.2")]
 
 // 由 MSBuild WriteCodeFragment 类生成。
 

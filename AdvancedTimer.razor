@@ -10,6 +10,8 @@
     /// </summary>
     protected override void OnInitialized()
     {
+        ValidateAndAdjustParameters();
+
         if (DelayInMilisec > 0)
         {
             _timer = new Timer(DelayInMilisec);
@@ -76,6 +78,16 @@
     [Parameter]
     public bool IsEnabled { get; set; }
 
+    /// <summary>
+    /// 当前定时器是否正在运行
+    /// </summary>
+    public bool IsRunning => _timer?.Enabled ?? false;
+
+    /// <summary>
+    /// 获取当前的事件计数
+    /// </summary>
+    public ulong CurrentCount => _eventCount;
+
     @* /// <summary>
     /// Starts the internal timer which will start after the set delay and fire event for the given occurrence times.
     /// 启动内部定时器，该定时器将在设定的延迟后启动，并在给定的发生次数触发事件。
@@ -141,6 +153,11 @@
     /// <param name="e">The elapsed event arguments</param>
     private void OnElapsed(object? source, ElapsedEventArgs e)
     {
+        if (_disposedValue)
+        {
+            return;
+        }
+
         if (_eventCount >= Occurring.Count)
         {
             _timer?.Stop();
@@ -178,8 +195,11 @@
         {
             if (disposing && _timer is not null)
             {
+                _timer.Stop();
                 _timer.Elapsed -= OnElapsed;
+                _timer.Elapsed -= OnDelay;
                 _timer.Dispose();
+                _timer = null;
             }
             _disposedValue = true;
         }
@@ -197,10 +217,7 @@
 
     protected override void OnParametersSet()
     {
-        if (IntervalInMilisec <= 0)
-        {
-            IntervalInMilisec = 1;
-        }
+        ValidateAndAdjustParameters();
         
         if (_timer is not null)
         {
@@ -221,5 +238,20 @@
         }
         
         base.OnParametersSet();
+    }
+
+    private void ValidateAndAdjustParameters()
+    {
+        if (IntervalInMilisec <= 0)
+        {
+            IntervalInMilisec = 1;
+            WriteDiag($"Invalid IntervalInMilisec value, reset to 1ms");
+        }
+
+        if (DelayInMilisec < 0)
+        {
+            DelayInMilisec = 0;
+            WriteDiag($"Invalid DelayInMilisec value, reset to 0ms");
+        }
     }
 }
