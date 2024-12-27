@@ -49,3 +49,5 @@ D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\refint\Tc.Blazor.Compone
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\Tc.Blazor.Components.Timer.xml
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\Tc.Blazor.Components.Timer.pdb
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\ref\Tc.Blazor.Components.Timer.dll
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\Tc.Blazor.Components.Timer.sourcelink.json
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Release\net8.0\staticwebassets.upToDateCheck.txt

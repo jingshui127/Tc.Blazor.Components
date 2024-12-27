@@ -14,7 +14,7 @@
     <Description>Blazor 定时器组件。QQ:2492123056</Description>
     <Company>科控物联</Company>
     <Copyright>©2002-2024 WYQ</Copyright>
-    <VersionPrefix>2.2</VersionPrefix>
+    <VersionPrefix>2.3</VersionPrefix>
     <VersionSuffix>$([System.DateTime]::Now.ToString(`yyyy.MMdd`))</VersionSuffix>
     <Version>$(VersionPrefix).$(VersionSuffix)</Version>
     <FileVersion>$(Version)</FileVersion>

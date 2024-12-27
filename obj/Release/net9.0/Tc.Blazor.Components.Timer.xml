@@ -83,6 +83,16 @@
             可以设置为启动（true）或停止（false）定时器。返回定时器的内部状态。如果定时器正在运行，则为true，否则为false。
             </summary>
         </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IsRunning">
+            <summary>
+            当前定时器是否正在运行
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.CurrentCount">
+            <summary>
+            获取当前的事件计数
+            </summary>
+        </member>
         <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Reset">
             <summary>
             Reset internal timer and reset occurrence counter to 0. Events will be fired for the given occurrence times.
