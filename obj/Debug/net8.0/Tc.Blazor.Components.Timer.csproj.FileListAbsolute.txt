@@ -24,3 +24,4 @@ D:\Csharp\Tc.Blazor.Components.Timer\obj\Debug\net8.0\refint\Tc.Blazor.Component
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Debug\net8.0\Tc.Blazor.Components.Timer.xml
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Debug\net8.0\Tc.Blazor.Components.Timer.pdb
 D:\Csharp\Tc.Blazor.Components.Timer\obj\Debug\net8.0\ref\Tc.Blazor.Components.Timer.dll
+D:\Csharp\Tc.Blazor.Components.Timer\obj\Debug\net8.0\Tc.Blazor.Components.Timer.sourcelink.json
