@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("©2002-2024 WYQ")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Blazor 定时器组件。QQ:2492123056")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("3.1.2025.0124")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.2025.0124+1ecc260d03d9e9a8a5b6b01b97b624989e20b9ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("3.1.2025.0124+502d6ae1a279b5c94dc01de7d5e16632403bcf39")]
 [assembly: System.Reflection.AssemblyProductAttribute("Blazor Components")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Tc.Blazor.Components.Timer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("3.1")]
