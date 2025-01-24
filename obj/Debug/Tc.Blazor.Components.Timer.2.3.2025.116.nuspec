@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Tc.Blazor.Components.Timer</id>
+    <version>2.3.2025.116</version>
+    <title>Blazor Components Timer</title>
+    <authors>科控物联</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://mp.weixin.qq.com/s/Qe7CB5jdqzYHkTPReiEiFg?token=857163578&amp;lang=zh_CN</projectUrl>
+    <description>Blazor 定时器组件。QQ:2492123056</description>
+    <copyright>©2002-2024 WYQ</copyright>
+    <tags>Blazor Timer</tags>
+    <repository type="git" commit="1ecc260d03d9e9a8a5b6b01b97b624989e20b9ce" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="8.0.12" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.AspNetCore.Components.Web" version="9.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Csharp\Tc.Blazor.Components.Timer\bin\Debug\net8.0\Tc.Blazor.Components.Timer.dll" target="lib\net8.0\Tc.Blazor.Components.Timer.dll" />
+    <file src="D:\Csharp\Tc.Blazor.Components.Timer\bin\Debug\net8.0\Tc.Blazor.Components.Timer.xml" target="lib\net8.0\Tc.Blazor.Components.Timer.xml" />
+    <file src="D:\Csharp\Tc.Blazor.Components.Timer\bin\Debug\net9.0\Tc.Blazor.Components.Timer.dll" target="lib\net9.0\Tc.Blazor.Components.Timer.dll" />
+    <file src="D:\Csharp\Tc.Blazor.Components.Timer\bin\Debug\net9.0\Tc.Blazor.Components.Timer.xml" target="lib\net9.0\Tc.Blazor.Components.Timer.xml" />
+  </files>
+</package>

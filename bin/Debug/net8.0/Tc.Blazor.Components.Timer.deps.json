@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v8.0": {
-      "Tc.Blazor.Components.Timer/2.3.2025.0115": {
+      "Tc.Blazor.Components.Timer/2.3.2025.0116": {
         "dependencies": {
           "Microsoft.AspNetCore.Components.Web": "8.0.12"
         },
@@ -144,7 +144,7 @@
     }
   },
   "libraries": {
-    "Tc.Blazor.Components.Timer/2.3.2025.0115": {
+    "Tc.Blazor.Components.Timer/2.3.2025.0116": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

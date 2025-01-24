@@ -4,6 +4,86 @@
         <name>Tc.Blazor.Components.Timer</name>
     </assembly>
     <members>
+        <member name="F:Tc.Blazor.Components.Timer.AdvancedTimer._disposedValue">
+            <summary>timer是否已经释放</summary>
+        </member>
+        <member name="F:Tc.Blazor.Components.Timer.AdvancedTimer._eventCount">
+            <summary>timer触发的事件计数</summary>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnInitialized">
+            <summary>Called when the component is initialized. 当组件初始化时调用。</summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IntervalInMilisec">
+            <summary>Notification timeout in ms. If set to 0 or less it set to 1 ms. 通知超时时间（毫秒）。如果设置为0或更小，则设置为1毫秒。</summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.DelayInMilisec">
+            <summary>
+            Delay in ms. before the timer will start. If set to 0 timer will start immediately. 定时器启动前的延迟时间（毫秒）。如果设置为0，定时器将立即启动。
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.Occurring">
+            <summary>
+            Number of times elapsed event will be fired. See <see cref="T:Tc.Blazor.Components.Timer.Times"/> record description.
+            定时器触发的次数。参见 <see cref="T:Tc.Blazor.Components.Timer.Times"/> 记录描述。
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.AutoStart">
+            <summary>
+            If true timer will start when component OnInitialized event run, otherwise timer must be
+            started by IsEnabled property set to true. 如果为true，则在组件OnInitialized事件运行时定时器将启动，否则必须通过将IsEnabled属性设置为true来启动定时器。
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.OnIntervalElapsed">
+            <summary>
+            Timer event this Function called when specified timeout elapsed, parameter is the iteration
+            count. 当指定的超时时间过去时调用此函数的定时器事件，参数是迭代计数。
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IsEnabled">
+            <summary>
+            Can be set to start `true` or stop `false` timer. Returns the inner state of the timer.
+            `True` if timer is running otherwise `false`. 可以设置为启动（true）或停止（false）定时器。返回定时器的内部状态。如果定时器正在运行，则为true，否则为false。
+            </summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IsRunning">
+            <summary>当前定时器是否正在运行</summary>
+        </member>
+        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.CurrentCount">
+            <summary>获取当前的事件计数</summary>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Reset">
+            <summary>
+            Reset internal timer and reset occurrence counter to 0. Events will be fired for the given
+            occurrence times. 重置内部计时器并将发生次数计数器重置为0。事件将在给定的发生次数触发。
+            </summary>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnDelay(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>Called when the timer delay has elapsed. 当定时器延迟时间到达时调用。</summary>
+            <param name="source">The event source</param>
+            <param name="e">The elapsed event arguments</param>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnElapsed(System.Object,System.Timers.ElapsedEventArgs)">
+            <summary>Called when the timer interval has elapsed. 当定时器间隔时间到达时调用</summary>
+            <param name="source">The event source</param>
+            <param name="e">The elapsed event arguments</param>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.WriteDiag(System.String)">
+            <summary>Writes diagnostic information to the logger. 将诊断信息写入日志。</summary>
+            <param name="message">The message to log</param>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Dispose(System.Boolean)">
+            <summary>Disposes the component's resources. 释放组件的资源。</summary>
+            <param name="disposing">True if disposing managed resources</param>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Dispose">
+            <summary>Dispose component 释放组件资源</summary>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnParametersSet">
+            <summary>Called when the component parameters are set. 当组件参数设置时调用。</summary>
+        </member>
+        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.ValidateAndAdjustParameters">
+            <summary>Validates and adjusts the parameters. 验证并调整参数。</summary>
+        </member>
         <member name="T:Tc.Blazor.Components.Timer.Times">
             <summary>
             <para>Times to occur of <see cref="T:Tc.Blazor.Components.Timer.AdvancedTimer"/> ticks</para>
@@ -40,100 +120,6 @@
             <para>发生次数</para>
             </param>
             <returns></returns>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnInitialized">
-            <summary>
-            Called when the component is initialized.
-            当组件初始化时调用。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IntervalInMilisec">
-            <summary>
-            Notification timeout in ms. If set to 0 or less it set to 1 ms.
-            通知超时时间（毫秒）。如果设置为0或更小，则设置为1毫秒。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.DelayInMilisec">
-            <summary>
-            Delay in ms. before the timer will start. If set to 0 timer will start immediately.
-            定时器启动前的延迟时间（毫秒）。如果设置为0，定时器将立即启动。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.Occurring">
-            <summary>
-            Number of times elapsed event will be fired. See <see cref="T:Tc.Blazor.Components.Timer.Times"/> record description.
-            定时器触发的次数。参见<see cref="T:Tc.Blazor.Components.Timer.Times"/>记录描述。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.AutoStart">
-            <summary>
-            If true timer will start when component OnInitialized event run, otherwise timer must be started by IsEnabled property set to true.
-            如果为true，则在组件OnInitialized事件运行时定时器将启动，否则必须通过将IsEnabled属性设置为true来启动定时器。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.OnIntervalElapsed">
-            <summary>
-            Timer event this Function called when specified timeout elapsed, parameter is the iteration count.
-            当指定的超时时间过去时调用此函数的定时器事件，参数是迭代计数。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IsEnabled">
-            <summary>
-            Can be set to start `true` or stop `false` timer. Returns the inner state of the timer. `True` if timer is running otherwise `false`.
-            可以设置为启动（true）或停止（false）定时器。返回定时器的内部状态。如果定时器正在运行，则为true，否则为false。
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.IsRunning">
-            <summary>
-            当前定时器是否正在运行
-            </summary>
-        </member>
-        <member name="P:Tc.Blazor.Components.Timer.AdvancedTimer.CurrentCount">
-            <summary>
-            获取当前的事件计数
-            </summary>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Reset">
-            <summary>
-            Reset internal timer and reset occurrence counter to 0. Events will be fired for the given occurrence times.
-            重置内部计时器并将发生次数计数器重置为0。事件将在给定的发生次数触发。
-            </summary>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnDelay(System.Object,System.Timers.ElapsedEventArgs)">
-            <summary>
-            Called when the timer delay has elapsed.
-            当定时器延迟时间到达时调用。
-            </summary>
-            <param name="source">The event source</param>
-            <param name="e">The elapsed event arguments</param>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.OnElapsed(System.Object,System.Timers.ElapsedEventArgs)">
-            <summary>
-            Called when the timer interval has elapsed.
-            当定时器间隔时间到达时调用
-            </summary>
-            <param name="source">The event source</param>
-            <param name="e">The elapsed event arguments</param>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.WriteDiag(System.String)">
-            <summary>
-            Writes diagnostic information to the logger.
-            将诊断信息写入日志。
-            </summary>
-            <param name="message">The message to log</param>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Dispose(System.Boolean)">
-            <summary>
-            Disposes the component's resources.
-            释放组件的资源。
-            </summary>
-            <param name="disposing">True if disposing managed resources</param>
-        </member>
-        <member name="M:Tc.Blazor.Components.Timer.AdvancedTimer.Dispose">
-            <summary>
-            Dispose component
-            释放组件资源
-            </summary>
         </member>
     </members>
 </doc>
